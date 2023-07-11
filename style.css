@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+header{
+    display:flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: aliceblue;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+   display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color:rgb(230, 17, 230);
+}
+
+.name_ADA{
+    color:rgb(245, 31, 174);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: x-large;
+}
+.elemento_boton{
+  background-color: rgb(245, 31, 174);
+  font-weight: bold;
+  color:white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius:5px;
+  box-shadow: 2px 2px 10px rgb(0,0,0,50);
+ }
+
+ .aprende_a_programar{
+    background-image: 
+    linear-gradient(
+        0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ) 
+    ,url(MEDIA/front-end.jpg); 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+}
+
+ .titulo{
+    color:white;
+    font-size: xx-large; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding:30px;
+    font-weight: bold; 
+   
+}
+
+ section{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+ .quienes_somos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 650px;
+    justify-content: center;
+}
+
+.quienes_somos img{
+    width: 300px;
+   float:right;
+ }
+
+.quienes_somos div{
+    width:50%;
+    padding:10px;
+}
+
+.quienes_somos h1{
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.nuestros_programas{
+    background-color: rgb(51, 45, 45);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 850px;
+    justify-content: space-evenly;
+   }
+
+.titulo1{
+    font-size: x-large;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+  background-image:   linear-gradient(
+    0deg,
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+) 
+,url(MEDIA/front-end-cropped.jpg);
+  padding: 20px;
+  border-radius:15px;
+ }
+
+.titulo2{
+    font-size: x-large;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+  background-image:   linear-gradient(
+    0deg,
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+) 
+,url(MEDIA/full-stack-cropped.jpg);
+  padding: 20px;
+  border-radius:15px;
+}
+
+.titulo3{
+    font-size: x-large;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+  background-image:   linear-gradient(
+    0deg,
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+) 
+,url(MEDIA/python-cropped.jpg);
+  padding: 20px;
+  border-radius:15px;
+}
+
+.nuestros_programas p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.tipos_programas{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;  
+    height: 350px;
+}
+
+.tipos_programas div{
+    padding: 20px;
+    background-color: rgb(95, 93, 93);
+   margin:20px;
+   width:250px ;
+   height: 300px;
+   text-align: center;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.tipos_programas img{
+   height: 30px;
+}
+
+.caracteristicas{
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    height: 550px;
+    justify-content: center;
+}
+
+.caracteristicas img{
+    height: 300px;
+    padding-left: 80px;
+ }
+
+ul{
+    list-style: none;
+}
+
+.listas{
+    background-color: rgb(232,96,180);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+}
+
+footer{
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+padding-bottom: 20px;
+padding-right: 70px;
+    } 
+
+    span{
+color:grey;
+    }
+
+
+@media(max-width:800px) {
+       .ocultar{
+        display: none;
+     } 
+
+    header {
+        flex-direction: column;
+    } 
+    
+    nav a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .quienes_somos div{
+        width:100%;
+
+    }
+    .tipos_programas{
+        flex-direction: column;
+    }
+}
